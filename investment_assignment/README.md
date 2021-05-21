@@ -68,6 +68,8 @@ companies: A table with basic data of companies
 | state_code | State |
 
 Refer to companies.csv
+
+
 2. Funding round details: 
 
 rounds2: The most important parameters are explained below:
@@ -81,6 +83,8 @@ rounds2: The most important parameters are explained below:
 |raised_amount_usd| Money raised in funding (USD)|
 
 Refer to rounds2.csv
+
+
 3. Sector Classification:
 
 mapping.csv: This file maps the numerous category names in the companies table (such 3D printing, aerospace, agriculture, etc.) to eight broad sector names. The purpose is to simplify the analysis into eight sector buckets, rather than trying to analyse hundreds of them.
