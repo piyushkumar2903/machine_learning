@@ -63,4 +63,10 @@ To develop your understanding of the domain, you are advised to independently re
 Data Understanding
  
 
-Download the dataset from below. It contains the complete loan data for all loans issued through the time period 2007 t0 2011.
+Download the dataset from below. It contains the complete loan data for all loans issued through the time period 2007 t0 2011. Refer loan.zip
+
+Access the data dictionary which describes the meaning of these variables from Data Dictionary excel file.
+
+Results Expected
+1. Explain results of univariate, bivariate analysis etc. in business terms
+2. Include visualisations and summarise the most important results
