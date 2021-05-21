@@ -2,65 +2,89 @@ Assignment Details
 ================================================================================================================================
 Problem Statement
 
-Introduction
-
-Solving this assignment will give you an idea about how real business problems are solved using EDA. In this case study, apart from applying the techniques you have learnt in EDA, you will also develop a basic understanding of risk analytics in banking and financial services and understand how data is used to minimise the risk of losing money while lending to customers.
-
-  
-
-Business Understanding
-
-You work for a consumer finance company which specialises in lending various types of loans to urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
-
-If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
-
-If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company
+Problem Statement - Part I
+This assignment contains two parts. Part-I is a programming assignment (to be submitted in a Jupyter Notebook), and Part-II includes subjective questions (to be submitted in a PDF file). 
 
  
 
-The data given below contains the information about past loan applicants and whether they ‘defaulted’ or not. The aim is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc.
+Part-II is given on the next page.
 
  
 
-In this case study, you will use EDA to understand how consumer attributes and loan attributes influence the tendency of default.
-
-![Screenshot](loan.png)
-
-Figure 1. Loan Data Set
-When a person applies for a loan, there are two types of decisions that could be taken by the company:
-
-Loan accepted: If the company approves the loan, there are 3 possible scenarios described below:
-
-Fully paid: Applicant has fully paid the loan (the principal and the interest rate)
-
-Current: Applicant is in the process of paying the instalments, i.e. the tenure of the loan is not yet completed. These candidates are not labelled as 'defaulted'.
-
-Charged-off: Applicant has not paid the instalments in due time for a long period of time, i.e. he/she has defaulted on the loan 
-
-Loan rejected: The company had rejected the loan (because the candidate does not meet their requirements etc.). Since the loan was rejected, there is no transactional history of those applicants with the company and so this data is not available with the company (and thus in this dataset)
- 
-
-Business Objectives
-This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface. 
+Assignment Part-I
+A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia. The data is provided in the CSV file below.
 
  
 
-Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). The credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders. In this case, the customers labelled as 'charged-off' are the 'defaulters'. 
+The company is looking at prospective properties to buy to enter the market. You are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
 
  
 
-If one is able to identify these risky loan applicants, then such loans can be reduced thereby cutting down the amount of credit loss. Identification of such applicants using EDA is the aim of this case study.
+The company wants to know:
+
+Which variables are significant in predicting the price of a house, and
+
+How well those variables describe the price of a house.
 
  
 
-In other words, the company wants to understand the driving factors (or driver variables) behind loan default, i.e. the variables which are strong indicators of default.  The company can utilise this knowledge for its portfolio and risk assessment. 
-
-
-To develop your understanding of the domain, you are advised to independently research a little about risk analytics (understanding the types of variables and their significance should be enough).
+Also, determine the optimal value of lambda for ridge and lasso regression.
 
  
 
-Data Understanding
+Business Goal 
+
  
 
-Download the dataset from below. It contains the complete loan data for all loans issued through the time period 2007 t0 2011.
+You are required to model the price of houses with the available independent variables. This model will then be used by the management to understand how exactly the prices vary with the variables. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns. Further, the model will be a good way for management to understand the pricing dynamics of a new market.
+
+ 
+
+Downloads
+
+ 
+
+You can download the data set file from repo.
+
+Data Definition
+
+ 
+The details of the various variables are given in data_description.txt
+
+Assignment Part-II
+The following questions are the second part of the graded assignment. Please submit the answers in one PDF file. For writing normal text, please use MS Word (or similar software that can convert documents to PDF). For equations and figures, you can write/draw them on a blank sheet of paper using a pen, click images and upload them in the same Word document.
+
+ 
+
+The final submission will be in the form of one PDF file. A sample PDF to illustrate the submission format is provided below.
+
+ 
+
+Note: DO NOT copy or paste answers from anywhere, and type the answers in your own words; your solution files will be tested using automatic plagiarism checkers and will attract a heavy penalty if plagiarism is detected.
+
+ 
+
+Please limit your answers to less than 500 words per question.
+ 
+
+Question 1
+
+What is the optimal value of alpha for ridge and lasso regression? What will be the changes in the model if you choose double the value of alpha for both ridge and lasso? What will be the most important predictor variables after the change is implemented?
+
+ 
+
+Question 2
+
+You have determined the optimal value of lambda for ridge and lasso regression during the assignment. Now, which one will you choose to apply and why?
+
+ 
+
+Question 3
+
+After building the model, you realised that the five most important predictor variables in the lasso model are not available in the incoming data. You will now have to create another model excluding the five most important predictor variables. Which are the five most important predictor variables now?
+
+ 
+
+Question 4
+
+How can you make sure that a model is robust and generalisable? What are the implications of the same for the accuracy of the model and why?
