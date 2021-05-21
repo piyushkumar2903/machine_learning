@@ -57,11 +57,35 @@ Data which is to be used with assignment:-
 1. Company details
 
 companies: A table with basic data of companies
+| Attribute    | Description |
+| ------------ | ----------- |
+| Permalink    | Unique ID of company  |
+| name         | Company name  |
+| homepage_url | Website URL |
+| category_list | Category/categories to which a company belongs |
+| status | Operational status |
+| country_code | Country Code | 
+| state_code | State |
+
+Refer to companies.csv
+
 
 2. Funding round details: 
 
 rounds2: The most important parameters are explained below:
+| Attribute    | Description |
+| ------------ | ----------- |
+|company_permalink |Unique ID of company |
+|funding_round_permalink | Unique ID of funding round |
+| funding_round_type | Type of funding – venture, angel, private equity etc.|
+| funding_round_code |Round of venture funding (round A, B etc.) |
+| funded_at |Date of funding|
+|raised_amount_usd| Money raised in funding (USD)|
+
+Refer to rounds2.csv
+
 
 3. Sector Classification:
 
 mapping.csv: This file maps the numerous category names in the companies table (such 3D printing, aerospace, agriculture, etc.) to eight broad sector names. The purpose is to simplify the analysis into eight sector buckets, rather than trying to analyse hundreds of them.
+Refer to mapping.csv
